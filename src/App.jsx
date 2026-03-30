@@ -1,8 +1,8 @@
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
-import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import FAQPage from "./pages/FAQPage";
@@ -10,9 +10,8 @@ import SupportPage from "./pages/SupportPage";
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
-
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -20,9 +19,8 @@ function App() {
           <Route path="/support" element={<SupportPage />} />
         </Routes>
       </div>
-
       <Footer />
-    </>
+    </Router>
   );
 }
 

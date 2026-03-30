@@ -1,10 +1,7 @@
-function Footer() {
+export default function Footer() {
   return (
-    <div>
-      <hr />
+    <footer className="footer">
       <p>© 2026 Tech Support | Created by Manasi</p>
-    </div>
+    </footer>
   );
 }
-
-export default Footer;
