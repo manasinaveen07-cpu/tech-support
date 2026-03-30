@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div>
+    <div className="container">
       <h1>Welcome to Tech Support 💻</h1>
       <p>We help you solve your technical issues easily.</p>
 
